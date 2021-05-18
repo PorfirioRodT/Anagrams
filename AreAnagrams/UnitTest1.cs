@@ -10,10 +10,12 @@ namespace AreAnagrams
         }
 
         [Test]
-        public void Test1()
+        public void AreAnagramas()
         {
 
-            Assert.Pass();
+            Program anagrams = new Program(); 
+
+            Assert.That(() => anagrams.IsAnAnagram("Juan", "nuja"), Is.True);
 
         }
 
